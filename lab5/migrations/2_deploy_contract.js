@@ -1,0 +1,10 @@
+const StandardERC20 = artifacts.require("StandardERC20");
+
+module.exports = function (deployer) {
+  deployer.deploy(
+    StandardERC20,
+    "GBC Token",
+    "GBC",
+    web3.utils.toBN(10000000000000000000)
+  );
+};
